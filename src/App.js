@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route, BrowserRouter as Router} from 'react-router-dom';
+import WeekSelection from './codewalker-components/WeekSelection';
+import CRIII from './codewalker-components/CRIII';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<WeekSelection/>}></Route>
+          <Route path='/week11q1' element={<CRIII whichQuestion={1}/>}></Route>
+          <Route path='/week11q2' element={<CRIII whichQuestion={2}/>}></Route>
+        </Routes>
+      </Router>
   );
 }
 

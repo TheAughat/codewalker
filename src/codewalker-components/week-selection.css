@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.week-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.week-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 5em;
+    width: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* background: grey; */
+    border-bottom: 2px solid grey;
+}
+
+.week-block h2 {
+    line-height: 0.2em;
+}
+
+.week-block h3 {
+    line-height: 0.2em;
+}
+
+.link {
+    margin-top: 1em;
+    background: none;
+    border: none;
+    color: rgb(8, 106, 204);
+    font-size: 1rem;
+}
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}

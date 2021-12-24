@@ -1,0 +1,39 @@
+
+.question-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.new-line {
+    white-space: pre-line;
+}
+
+.question-block {
+    width: 60%;
+    padding: 1em;
+    background: rgb(211, 231, 252);
+}
+
+@media screen and (max-width: 1200px) {
+    .question-block {
+        width: 90%;
+    }
+}
+
+.editor {
+    margin-top: 1em;
+}
+
+.results {
+    background: white;
+    /* text-align: center; */
+    padding: 0em 1em;
+    margin-top: 1em;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 5px;
+}
+
+.results-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+}

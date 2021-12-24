@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.test-page {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.buttons-panel {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.btn {
+    margin: 2em;
+    padding: 0.5em 1em;
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 7px;
+    background: linear-gradient(to top, rgb(199, 199, 199), white);
+    /* font-weight: bold; */
+}
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(to top, rgb(172, 172, 172), rgb(236, 236, 236));
+}
+.btn:active {
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgb(199, 199, 199), white);
+}
+.test-btn {
+    width: 8em;
+}
