@@ -9,7 +9,6 @@ const CRIII = ({whichQuestion}) => {
 
     const [currentQuestion, setCurrentQuestion] = useState(whichQuestion);
     const [questionText, setQuestionText] = useState('');
-    const [methodCall, setMethodCall] = useState('');
 
     const [code, setCode] = useState('');
     const [results, setResults] = useState('');
@@ -23,9 +22,7 @@ const CRIII = ({whichQuestion}) => {
         // question text, method call
         const qID = 'wk11criiiqs' + currentQuestion;
         const res = await fetch('http://localhost:8080/get-question-data/' + qID).then(resp => resp.json());
-        setMethodCall("hapless");
         setQuestionText(res[0]);
-        setMethodCall(res[1]);
     };
 
     async function submitCode(codeToSubmit) {
@@ -55,8 +52,8 @@ const CRIII = ({whichQuestion}) => {
 
     return (
         <div className="test-page">
-            Week 11, Coderunner III.
-            <Question questionText={questionText} questionId={currentQuestion} code={code} setCode={setCode} results={results} methodCall={methodCall}/>
+            Week 11, Coderunner III
+            <Question questionText={questionText} questionId={currentQuestion} code={code} setCode={setCode} results={results}/>
 
             <div className="buttons-panel">
                 <button className='btn back-btn' onClick={() => {
