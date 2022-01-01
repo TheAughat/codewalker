@@ -2,6 +2,7 @@ import './test-page.css';
 import Question from './Question';
 import {useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
+import ServerConnect from './ServerConnect';
 
 const CRIII = ({whichQuestion}) => {
 
@@ -68,6 +69,7 @@ const CRIII = ({whichQuestion}) => {
                     navigate('/week11q2');
                 }}>Next Question</button>
             </div>
+            <ServerConnect/>
         </div>
     );
 }

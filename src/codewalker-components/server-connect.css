@@ -1,0 +1,12 @@
+.server-connect {
+    display: flex;
+    flex-direction: row;
+}
+
+.connect-btn {
+    margin-left: 1em;
+}
+
+p {
+    margin: 2em 0em;
+}
