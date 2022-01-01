@@ -1,9 +1,13 @@
 import './server-connect.css';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 const ServerConnect = () => {
     const [status, setStatus] = useState('offline');
     const [btnStatus, setBtnStatus] = useState('Connect');
+
+    useEffect(() => {
+        makeConnection();
+    }, []);
 
     async function makeConnection() {
         //
