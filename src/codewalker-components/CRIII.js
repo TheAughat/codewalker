@@ -18,9 +18,8 @@ const CRIII = ({whichQuestion}) => {
         retrieveQuestionData();
     }, [currentQuestion]);
 
+    // Use questionId to retrieve the question data from the backend
     const retrieveQuestionData = async () => {
-        // TODO: Use questionId to retrieve the question data from the backend
-        // question text, method call
         const qID = 'wk11criiiqs' + currentQuestion;
         const res = await fetch('http://localhost:8080/get-question-data/' + qID).then(resp => resp.json());
         setQuestionText(res[0]);
@@ -75,4 +74,3 @@ const CRIII = ({whichQuestion}) => {
 }
 
 export default CRIII;
-

@@ -10,7 +10,6 @@ const ServerConnect = () => {
     }, []);
 
     async function makeConnection() {
-        //
         if (status === 'online') {
             setBtnStatus('Connect');
             setStatus('offline');

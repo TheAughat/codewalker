@@ -3,7 +3,6 @@ import WeekSelection from './codewalker-components/WeekSelection';
 import CRIII from './codewalker-components/CRIII';
 
 function App() {
-
   return (
       <Router>
         <Routes>
