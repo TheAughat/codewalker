@@ -1,23 +1,61 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+# ─────────────── FRONTEND ───────────────
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+/frontend/node_modules/
+/frontend/.pnp
+/frontend/.pnp.js
 
 # testing
-/coverage
+/frontend/coverage/
 
 # production
-/build
+/frontend/build/
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+
+# ─────────────── BACKEND ───────────────
+# ignore the whole help file and build artifacts
+/backend/HELP.md
+/backend/target/
+
+# now re-include any Maven wrapper or test/target build outputs you do want
+!/backend/.mvn/wrapper/maven-wrapper.jar
+!/backend/**/src/main/**/target/
+!/backend/**/src/test/**/target/
+
+### STS metadata
+/backend/.apt_generated/
+/backend/.classpath
+/backend/.factorypath
+/backend/.project
+/backend/.settings/
+/backend/.springBeans
+/backend/.sts4-cache/
+
+### IntelliJ IDEA
+/backend/.idea/
+/backend/*.iws
+/backend/*.iml
+/backend/*.ipr
+
+### NetBeans
+/backend/nbproject/private/
+/backend/nbbuild/
+/backend/dist/
+/backend/nbdist/
+/backend/.nb-gradle/
+/backend/build/
+!/backend/**/src/main/**/build/
+!/backend/**/src/test/**/build/
+
+### VS Code
+/backend/.vscode/
